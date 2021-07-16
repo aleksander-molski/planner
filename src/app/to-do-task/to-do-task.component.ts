@@ -8,5 +8,4 @@ import { IToDoTask } from "./IToDoTask";
 })
 export class ToDoTaskComponent {
     @Input() toDoTask: IToDoTask | undefined;
-
 }
