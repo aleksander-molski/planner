@@ -1,3 +1,4 @@
 <p>App component works!</p>
-<app-to-do-task></app-to-do-task>
-<app-to-do-task></app-to-do-task>
+<div *ngFor="let task of toDoTasks">
+  <app-to-do-task [toDoTask]="task"></app-to-do-task>
+</div>
