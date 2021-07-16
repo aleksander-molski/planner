@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
+import { IToDoTask } from "./IToDoTask";
 
 @Component({
     selector: 'app-to-do-task',
@@ -6,5 +7,6 @@ import { Component } from "@angular/core";
     styleUrls: ['./to-do-task.component.scss']
 })
 export class ToDoTaskComponent {
+    @Input() toDoTask: IToDoTask | undefined;
 
 }
